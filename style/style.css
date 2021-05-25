@@ -6,10 +6,7 @@
 
 .contentWrapper {
     display: grid;
-    align-items: center;
-    justify-content: center;
-    /* place-items: center; */
-    /* padding-bottom: 40px; */
+    place-items: center;
     height: 80vh;
 }
 
@@ -19,19 +16,10 @@
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.75rem;
 }
 
-a {
-    appearance: button; /* CSS3 */    
-    -webkit-appearance: button; /* Safari and Chrome */
-    -moz-appearance: button; /* Firefox */
-    -ms-appearance: button; /* Internet Explorer */
-    -o-appearance: button; /* Opera */
-    cursor: pointer;
-}
-
-.button {
+.btn {
     font: bold;
     font-size:  1.5rem;
     text-decoration: none;
@@ -44,11 +32,9 @@ a {
     border-left: 1px solid #CCCCCC; */
 }
 
-
-
-
-
-
+.separator {
+    height: 12px;
+}
 
   /* .button {
     font: bold 11px Arial;
