@@ -1,22 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;700&display=swap');
 
 * {
     font-family: 'Work Sans', sans-serif;
 }
 
+body {
+    margin: 0;
+}
+
 .contentWrapper {
     display: grid;
     place-items: center;
-    height: 80vh;
+    max-width: 960px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.75rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+p {
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 150%;
+}
+
+.featuresWrapper {
+    margin-top: 84px;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    gap: 24px;
+}
+
+.feature {
+    flex-basis: 100%;
+}
+
+#logo {
+    height: 36px;
+}
+
+#twitterImg {
+    width: 100%;
+}
+
+.menuItem {
+    display: flex;
+    place-items: center;
+    height: 40px;
+    width: 40px;
+    padding: 12px;
 }
 
 .header {
     text-align: center;
     max-width: 640px;
-}
-
-h1 {
-    font-size: 2.75rem;
 }
 
 .btn {
@@ -25,7 +78,8 @@ h1 {
     text-decoration: none;
     background-color: #2962ff;
     color: #fff;
-    padding: 10px 20px;
+    padding: 12px 20px;
+    font-weight: 700;
     /* border-top: 1px solid #CCCCCC;
     border-right: 1px solid #333333;
     border-bottom: 1px solid #333333;
@@ -36,14 +90,10 @@ h1 {
     height: 12px;
 }
 
-  /* .button {
-    font: bold 11px Arial;
-    text-decoration: none;
-    background-color: #EEEEEE;
-    color: #333333;
-    padding: 2px 6px 2px 6px;
-    border-top: 1px solid #CCCCCC;
-    border-right: 1px solid #333333;
-    border-bottom: 1px solid #333333;
-    border-left: 1px solid #CCCCCC;
-  } */
+
+@media only screen and (max-width: 640px) {
+    .features {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+}
